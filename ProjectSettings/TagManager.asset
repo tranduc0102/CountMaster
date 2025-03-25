@@ -4,31 +4,28 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - opera
-  - gate
-  - enemy
-  - finish
+  - Water
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Ground
   - Water
   - UI
+  - Ragdoll
+  - Character
+  - ScreenshotShare
+  - Projectile
+  - Interactable Point
+  - Helper
+  - Hittable
+  - Hittable Trigger
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Interactable Object
+  - Resource
+  - Resource Trigger
+  - Enemy
+  - EnemyTrigger
   - 
   - 
   - 

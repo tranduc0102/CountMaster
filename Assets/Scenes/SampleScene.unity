@@ -857,8 +857,8 @@ MonoBehaviour:
     type: 3}
   DistanceFactor: 0.3
   Radius: 1
-  moveByTouch: 1
-  gameState: 1
+  moveByTouch: 0
+  gameState: 0
   playerSpeed: 8
   roadSpeed: 100
   road: {fileID: 1325104744}

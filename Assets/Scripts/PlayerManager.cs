@@ -41,7 +41,6 @@ public class PlayerManager : MonoBehaviour
 
         gameState = false;
         
-        MakeStickMan(50);
     }
     
     void Update()
@@ -146,7 +145,7 @@ public class PlayerManager : MonoBehaviour
             
             if (plane.Raycast(ray,out var distance))
             {
-                mouseStartPos = ray.GetPoint(distance + 5f);
+                mouseStartPos = ray.GetPoint(distance + 1f);
                 playerStartPos = transform.position;
             }
         }
@@ -171,9 +170,9 @@ public class PlayerManager : MonoBehaviour
 
 
                 if (numberOfStickmans > 50)
-                    control.x = Mathf.Clamp(control.x, -0.7f, 0.7f);
+                    control.x = Mathf.Clamp(control.x, -2f, 2f);
                 else
-                    control.x = Mathf.Clamp(control.x, -1.1f, 1.1f);
+                    control.x = Mathf.Clamp(control.x, -6f, 6f);
 
                 transform.position = new Vector3(Mathf.Lerp(transform.position.x,control.x,Time.deltaTime * playerSpeed)
                     ,transform.position.y,transform.position.z);
